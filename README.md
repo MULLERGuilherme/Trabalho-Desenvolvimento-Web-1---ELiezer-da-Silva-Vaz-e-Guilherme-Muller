@@ -8,6 +8,8 @@ A classe Pagamento possui os atributos: **cod_pagamento**, que representa o ID d
 
 Através dos controllers de jogador e pagamentos, existem os seguintes métodos:
 
+O servidor atende na URL http://localhost:8080/api
+
 Para jogadores tem-se os seguintes métodos:
 
 Caso não se utilize a ID de um jogador:
@@ -27,14 +29,14 @@ Para pagamentos tem-se os seguintes métodos:
 
 Caso não se utilize a ID de um pagamento:
 
-* post: http://localhost:8080/pagamentos cria um novo pagamento;<br/>
-* get: http://localhost:8080/pagamentos  busca todos os pagamentos; <br/>
-* delete: http://localhost:8080/pagamentos  deleta todos os pagamentos; <br/>
+* post: http://localhost:8080/api/pagamentos cria um novo pagamento;<br/>
+* get: http://localhost:8080/api/pagamentos  busca todos os pagamentos; <br/>
+* delete: http://localhost:8080/api/pagamentos  deleta todos os pagamentos; <br/>
 
 Caso se utilize o ID de um pagamento pode-se utilizar os seguintes métodos:
-* post: http://localhost:8080/pagamentosid  cria um pagamento relacionado a um jogador;<br/>
-* put: http://localhost:8080/pagamentos/{cod_pagamento}  atualiza os dados do pagamento com determinado ID;<br/>
-* delete: http://localhost:8080/pagamentos/{cod_pagamento}: deleta um pagamento com um determinado ID.
+* post: http://localhost:8080/api/pagamentosid  cria um pagamento relacionado a um jogador;<br/>
+* put: http://localhost:8080/api/pagamentos/{cod_pagamento}  atualiza os dados do pagamento com determinado ID;<br/>
+* delete: http://localhost:8080/api/pagamentos/{cod_pagamento}: deleta um pagamento com um determinado ID.
 
 Vale ressaltar que os métodos put e post devem receber em seu corpo o respectivo objeto a ser criado ou alterado
 
