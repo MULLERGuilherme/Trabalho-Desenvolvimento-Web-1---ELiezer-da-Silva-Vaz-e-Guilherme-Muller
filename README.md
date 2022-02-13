@@ -12,25 +12,25 @@ Para jogadores tem-se os seguintes métodos:
 
 Caso não se utilize a ID de um jogador:
 
-/jogadores get: busca todos os jogadores;<br/>
-/jogadores delete: deleta todos os jogadores;<br/>
-/jogadores post: cria um novo jogador;<br/>
+http://localhost:8080/api/jogadores get: busca todos os jogadores;<br/>
+http://localhost:8080/api/jogadores delete: deleta todos os jogadores;<br/>
+http://localhost:8080/api/jogadores post: cria um novo jogador;<br/>
 
 Caso se utilize o ID de um jogador pode se utilizar os seguintes métodos
 
-/jogadores get: faz uma busca a um jogador com seterminado ID;<br/>
-/jogadores delete: deleta um jogador com determinado ID;<br/>
-/jogadores put: atualiza os dados de um jogador com determinado ID;<br/>
+http://localhost:8080/api/jogadores/{cod_jogador} get: faz uma busca a um jogador com seterminado ID;<br/>
+http://localhost:8080/api/jogadores/{cod_jogador} delete: deleta um jogador com determinado ID;<br/>
+http://localhost:8080/api/jogadores/{cod_jogador} put: atualiza os dados de um jogador com determinado ID;<br/>
 
 Para pagamentos tem-se os seguintes métodos:
 
 Caso não se utilize a ID de um pagamento:
-/pagamentos get: busca todos os pagamentos através da ID de um jogador; <br/>
-/pagamentos delete: deleta todos os pagamentos de um jogador; <br/>
+http://localhost:8080/pagamentos get: busca todos os pagamentos através da ID de um jogador; <br/>
+http://localhost:8080/pagamentos delete: deleta todos os pagamentos de um jogador; <br/>
 
 Caso se utilize o ID de um pagamento pode-se utilizar os seguintes métodos:
-/pagamentosid post: cria um pagamento relacionado a um jogador;<br/>
-/pagamentos put: atualiza os dados do pagamento com determinado ID.<br/>
+http://localhost:8080/pagamentosid post: cria um pagamento relacionado a um jogador;<br/>
+http://localhost:8080/pagamentos put: atualiza os dados do pagamento com determinado ID.<br/>
 
 O servidor atende na URL http://localhost:8080/api 
 
