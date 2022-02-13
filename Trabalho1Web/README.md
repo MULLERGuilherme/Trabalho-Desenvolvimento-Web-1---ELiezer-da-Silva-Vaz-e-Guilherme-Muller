@@ -6,18 +6,33 @@ A classe Jogador possui os atributos: cod_jogador, que representa o ID do jogado
 
 A classe Pagamento possui os atributos: cod_pagamento, que representa o ID do pagamento, ano, mes e também o valor do pagamento. Além de possuir os métodos get e set para cada um desses atributos. Além disso essa classe cria uma tabela no banco de dados, em que as colunas são os atributos da classse. Pagamento possui um relacionamento de n,1 com a classe jogador, ou seja, um jogador pode possuir vários pagamentos, porém um pagamento só pode pertencer à um jogador. A classe pagamento também conta com dois construtores: um que inicaliza os atributos de ano, mês, valor e de ID do pagamento enquanto outro inicaliza os atributos de ano, mês, valor e de ID do pagamento e atribui esse pagamento a um jogador;
 
-Através de seus controllers, ambas as classes possuem os seguintes métodos que atendem na URL: http://localhost:8080/api:
+Através dos controllers de jogador e pagamentos, existem os seguintes métodos:
 
--Criação de um novo objeto;
+Para jogadores tem-se os seguintes métodos:
 
--Atualização dos atributos de um dos objetos instanciados atarvés de um ID;
+Caso não se utilize a ID de um jogador:
 
--Deletar todos os objetos instanciados;
+get: busca todos os jogadores;<br/>
+delete: deleta todos os jogadores;br/>
+post: cria um novo jogador;br/>
 
--Deletar um dos objetos instanciados através de um ID;
+Caso se utilize o ID de um jogador pode se utilizar os seguintes métodos
 
--Retornar todos os objetos instanciados e seus dados;
+get: faz uma busca a um jogador com seterminado ID;<br/>
+delete: deleta um jogador com determinado ID;<br/>
+put: atualiza os dados de um jogador com determinado ID;<br/>
 
--Retornar os dados de um objeto instanciado atarvés de um ID;
+Para pagamentos tem-se os seguintes métodos:
+
+Caso não se utilize a ID de um pagamento:
+get: busca todos os pagamentos através da ID de um jogador; <br/>
+delte: deleta todos os pagamentos de um jogador; <br/>
+
+Caso se utilize o ID de um pagamento pode-se utilizar os seguintes métodos:
+post: cria um pagamento relacionado a um jogador;<br/>
+put: atualiza os dados do pagamento com determinado ID.<br/>
+
+O servidor atende na URL http://localhost:8080/api 
 
 Para o teste de comandos foi utilizado o software Insomnia pela praticidade de poder guardar os comandos para futuros testes. Podem ser vistos os resultados dos testes na pasta de Screenshots.
+
