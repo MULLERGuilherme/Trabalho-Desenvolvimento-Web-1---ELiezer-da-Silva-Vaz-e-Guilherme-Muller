@@ -1,4 +1,4 @@
-# Trabalho1Web
+# Desenvolvimento Web - Trabalho 1
  
 Alunos: Eliézer da Silva Vaz e Guilherme Müller
 
